@@ -18,6 +18,7 @@ body {
 main {
   align-self: center;
   justify-self: center;
+  padding: 5rem;
 }
 .section-timer-controls {
   margin-right: 17.2rem;  
@@ -35,7 +36,7 @@ main {
 #controls {
   display: flex;
   gap: 4rem;
-  width: clamp(20rem, 20rem + 30vw, 31.2rem);
+  width: clamp(20rem, 20rem + 15vw, 31.2rem);
 }
 button {
   background-color: transparent;

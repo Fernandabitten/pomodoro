@@ -13,20 +13,6 @@ import {
 
 export default function ({ controls, timer, sound }) {
   let minutes = Number(minutesDisplay.textContent);
-  let isActive = false;
-
-  function pausePlay(button, sound) {
-    if (isActive) {
-      document.location.reload(true);
-      isActive = false;
-      sound.pause();
-      button.classList.remove("colorSound");
-    } else {
-      isActive = true;
-      button.classList.add("colorSound");
-      sound.play();
-    }
-  }
 
   buttonPlay.addEventListener("click", function () {
     controls.play();
@@ -56,18 +42,18 @@ export default function ({ controls, timer, sound }) {
   });
 
   buttonForest.addEventListener("click", function () {
-    pausePlay(buttonForest, sound.buttonForestSound);
+    controls.pausePlay(buttonForest, sound.buttonForestSound);
   });
 
   buttonRainSound.addEventListener("click", function () {
-    pausePlay(buttonRainSound, sound.buttonRainSound);
+    controls.pausePlay(buttonRainSound, sound.buttonRainSound);
   });
 
   buttonCoffeeShopSound.addEventListener("click", function () {
-    pausePlay(buttonCoffeeShopSound, sound.buttonCoffeeShopSound);
+    controls.pausePlay(buttonCoffeeShopSound, sound.buttonCoffeeShopSound);
   });
 
   buttonFireplaceShopSound.addEventListener("click", function () {
-    pausePlay(buttonFireplaceShopSound, sound.buttonFireplaceShopSound);
+    controls.pausePlay(buttonFireplaceShopSound, sound.buttonFireplaceShopSound);
   });
 }

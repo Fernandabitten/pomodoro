@@ -1,4 +1,5 @@
 export default function Controls({ buttonPlay, buttonPause }) {
+  let isActive = false;
   function play() {
     buttonPlay.classList.add("hide");
     buttonPause.classList.remove("hide");
@@ -11,9 +12,21 @@ export default function Controls({ buttonPlay, buttonPause }) {
     buttonPause.classList.add("hide");
     buttonPlay.classList.remove("hide");
   }
+  function pausePlay(button, sound) {
+    if (isActive) {      
+      isActive = false;
+      sound.pause();
+      button.classList.remove("colorSound");
+    } else {
+      isActive = true;
+      button.classList.add("colorSound");
+      sound.play();
+    }
+  }
   return {
     reset,
     play,
     pause,
+    pausePlay,
   };
 }
