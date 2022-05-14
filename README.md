@@ -7,7 +7,7 @@ Rocketseat  project's .<br/>
 <img src="https://user-images.githubusercontent.com/77073426/168443122-ef82590f-40c9-4cde-ae1b-50097af74858.png" width="350px">
 Funcionalidades:
 
-- Cada card que se encontra do lado direito, quando selecionado, mudar de cor e emiti um som diferente
+- Cada card que se encontra do lado direito, quando selecionado, mudar de cor e emite um som diferente
 
 - Play / Pause   : aciona ou pausa o timer;
 - Stop   : para o timer;
