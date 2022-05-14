@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-color: #323238;
+  --cart-color: #e1e1e6;
+  --cart-sound-color: #02799d;
+  font-size: 62.5%;
+}
+body {
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  min-height: 100vh;
+}
+main {
+  align-self: center;
+  justify-self: center;
+}
+.section-timer-controls {
+  margin-right: 17.2rem;  
+}
+#timer {
+  font-size: clamp(6rem, 6rem + 15vw, 12.6rem);
+  line-height: 14.8rem;
+  max-width: 32.1rem;
+  padding-bottom: 4.8rem;
+  display: flex;
+}
+.hide {
+  display: none;
+}
+#controls {
+  display: flex;
+  gap: 4rem;
+  width: clamp(20rem, 20rem + 30vw, 31.2rem);
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+button svg {
+  width: clamp(20px, 20px + 30px, 48px);
+}
+.section-cards {
+  width: clamp(20rem, 20rem + 30vw, 30.9rem);
+  text-align: center;
+  padding-top: 5rem;
+  display: block;
+}
+.inline {
+  display: inline-block;
+}
+.card {
+  text-align: center;
+  width: clamp(8rem, 8rem + 10vw, 13.8rem);
+  height: clamp(8rem, 8rem + 10vw, 15.2rem);
+  border-radius: 2.4rem;
+  background-color: var(--cart-color);
+  margin: 0 1.5rem 1.5rem 0;
+  margin-bottom: 3.5rem;
+  display: inline-block;
+}
+.card svg {
+  width: clamp(2rem, 2rem + 10vw, 5.6rem);
+}
+.rain {
+  left: 3.2rem;
+  position: relative;
+}
+
+.fire {
+  left: 3.2rem;
+  position: relative;
+}
+
+.colorSound {
+  background-color: var(--cart-sound-color);
+}
