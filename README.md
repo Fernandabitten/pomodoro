@@ -13,3 +13,10 @@ Funcionalidades:
 - Stop   : para o timer;
 - :heavy_plus_sign:   : aumenta em mais 5 minutos o tempo do timer;
 - :heavy_minus_sign:  : diminui em 5 minutos o tempo do timer.
+
+
+<div style="display: inline_block"><br>
+  <img align="center" alt="Fer-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+  <img align="center" alt="Fer-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+  <img align="center" alt="Fer-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+</div>
