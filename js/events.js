@@ -14,6 +14,16 @@ import {
 export default function ({ controls, timer, sound }) {
   let minutes = Number(minutesDisplay.textContent);
 
+  function cleanButtonsSounds(){
+    sound.buttonForestSound.pause()
+    sound.buttonRainSound.pause() 
+    sound.buttonCoffeeShopSound.pause() 
+    sound.buttonFireplaceShopSound.pause() 
+    buttonForest.classList.remove('selected')
+    buttonRainSound.classList.remove('selected')
+    buttonCoffeeShopSound.classList.remove('selected')
+    buttonFireplaceShopSound.classList.remove('selected')    
+  }
   buttonPlay.addEventListener("click", function () {
     controls.play();
     timer.countdown();
@@ -42,18 +52,22 @@ export default function ({ controls, timer, sound }) {
   });
 
   buttonForest.addEventListener("click", function () {
+    cleanButtonsSounds()
     controls.pausePlay(buttonForest, sound.buttonForestSound);
   });
 
   buttonRainSound.addEventListener("click", function () {
+    cleanButtonsSounds()
     controls.pausePlay(buttonRainSound, sound.buttonRainSound);
   });
 
   buttonCoffeeShopSound.addEventListener("click", function () {
+    cleanButtonsSounds()
     controls.pausePlay(buttonCoffeeShopSound, sound.buttonCoffeeShopSound);
   });
 
   buttonFireplaceShopSound.addEventListener("click", function () {
+    cleanButtonsSounds()
     controls.pausePlay(buttonFireplaceShopSound, sound.buttonFireplaceShopSound);
   });
 }

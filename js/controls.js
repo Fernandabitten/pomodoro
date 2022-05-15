@@ -13,13 +13,13 @@ export default function Controls({ buttonPlay, buttonPause }) {
     buttonPlay.classList.remove("hide");
   }
   function pausePlay(button, sound) {
-    if (isActive) {      
+    if (isActive) {           
       isActive = false;
       sound.pause();
-      button.classList.remove("colorSound");
+      button.classList.remove("selected");
     } else {
       isActive = true;
-      button.classList.add("colorSound");
+      button.classList.add("selected");
       sound.play();
     }
   }

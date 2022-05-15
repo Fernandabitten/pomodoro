@@ -7,6 +7,7 @@
   --text-color: #323238;
   --cart-color: #e1e1e6;
   --cart-sound-color: #02799d;
+  --selected-sound: #FFFFFF;
   font-size: 62.5%;
 }
 body {
@@ -72,12 +73,13 @@ button svg {
   left: 3.2rem;
   position: relative;
 }
-
 .fire {
   left: 3.2rem;
   position: relative;
 }
-
-.colorSound {
+.selected {
   background-color: var(--cart-sound-color);
+}
+.selected path {  
+  fill: var(--selected-sound);
 }
